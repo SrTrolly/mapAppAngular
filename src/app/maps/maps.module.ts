@@ -10,6 +10,12 @@ import { MarkersPageComponent } from './pages/markers-page/markers-page.componen
 import { PropertiesPageComponent } from './pages/properties-page/properties-page.component';
 import { ZoomRagePageComponent } from './pages/zoom-rage-page/zoom-rage-page.component';
 
+import mapboxgl from "mapbox-gl";
+import { environment } from '../../environments/environment';
+
+
+mapboxgl.accessToken = environment.mapbox_key
+
 
 @NgModule({
   declarations: [
